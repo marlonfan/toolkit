@@ -11,8 +11,7 @@ type ValidateErrorMessage map[string]interface{}
 
 // ParseValidateString 为验证错误结果格式化信息
 func ParseValidateString(err string) ValidateErrorMessage {
-	var errorMessage ValidateErrorMessage
-
+	errorMessage := make(ValidateErrorMessage)
 	arrArray := strings.Split(err, ";")
 	for _, i := range arrArray {
 		errItem := strings.Split(i, ": ")
