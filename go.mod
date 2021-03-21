@@ -1,3 +1,3 @@
-module github.com/marlonfan/toolkit
+module v.marlon.life/toolkit
 
 go 1.15
